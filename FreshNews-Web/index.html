@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh News | Your Daily Insight</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
+            🌙
+        </button>
+        <h1>📰 Fresh News</h1>
+        <p>Curated headlines for the modern world</p>
+    </header>
+
+    <div class="filters-container">
+        <nav class="filters">
+            <button class="filter-btn active" data-category="general">General</button>
+            <button class="filter-btn" data-category="business">Business</button>
+            <button class="filter-btn" data-category="technology">Technology</button>
+            <button class="filter-btn" data-category="sports">Sports</button>
+            <button class="filter-btn" data-category="entertainment">Entertainment</button>
+            <button class="filter-btn" data-category="health">Health</button>
+            <button class="filter-btn" data-category="science">Science</button>
+        </nav>
+    </div>
+
+    <main class="container" id="newsContainer">
+        <!-- News cards will be injected here -->
+        <div class="loading">
+            <div class="loader"></div>
+            <p>Initializing...</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Fresh News. Powered by NewsAPI.</p>
+    </footer>
+
+    <script src="script.js" defer></script>
+
+</body>
+
+</html>
